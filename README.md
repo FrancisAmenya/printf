@@ -1,0 +1,1 @@
+A new function like printf from scratch.
