@@ -24,20 +24,6 @@ if (format[i] != '%')
 putsmychar(format[i]);
 }
 
-else if (format[i + 1] == 'c')
-{
-putsmychar(va_arg(args, int));
-i++;
-}
-
-else if (format[i + 1] == 's')
-{
-s_count = putsmystring(va_arg(args, char *));
-i++;
-count += (s_count - 1);
-
-}
-
 else if (format[i + 1] == '%')
 {
 putsmychar('%');
@@ -47,6 +33,12 @@ i++;
 else if (format[i + 1] == 'b')
 {
 bi_calc(va_arg(args, unsigned int));
+i++;
+}
+
+else if (format[i + 1] == 'c')
+{
+putsmychar(va_arg(args, int));
 i++;
 }
 
@@ -60,6 +52,13 @@ else if (format[i + 1] == 'i')
 {
 convert_this(va_arg(args, int));
 i++;
+}
+
+else if (format[i + 1] == 's')
+{
+s_count = putsmystring(va_arg(args, char *));
+i++;
+count += (s_count - 1);
 }
 
 count += 1;
