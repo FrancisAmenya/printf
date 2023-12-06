@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * putsmychar - print a character value
- * @c: char input to process
- * Return: 1
+ * @c: char input to process here
+ * Return: 1 always
  */
 int putsmychar(char c)
 {

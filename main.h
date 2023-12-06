@@ -5,10 +5,10 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-int putsmystring(char *);
-int convert_this(int);
-unsigned int binane(unsigned int);
-int putsmychar(char);
-int _printf(const char *, ...);
+int putsmystring(char *c);
+int convert_this(int zdnum);
+unsigned int bi_calc(unsigned int bnum);
+int putsmychar(char c);
+int _printf(const char *format, ...);
 
 #endif

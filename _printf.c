@@ -32,7 +32,7 @@ i++;
 
 else if (format[i + 1] == 's')
 {
-s_count = putsca(va_arg(args, char *));
+s_count = putsmystring(va_arg(args, char *));
 i++;
 count += (s_count - 1);
 

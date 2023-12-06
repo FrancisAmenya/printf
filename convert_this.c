@@ -13,7 +13,7 @@ int c = x;
 if (x < 0)
 {
 c = -x;
-putinchar('-');
+putsmychar('-');
 scount = scount + 1;
 }
 
@@ -24,7 +24,7 @@ scount = putchar_writer(c / 10, scount);
 
 /** count = count + 1; **/
 
-putinchar(c % 10 + '0');
+putsmychar(c % 10 + '0');
 
 return (scount + 1);
 }
@@ -33,17 +33,17 @@ return (scount + 1);
 /******************************************/
 
 /**
- * dnum - handles int to base10 conversion
- * @num: int parsed for convserion
+ * dnum - handles int to base10 con
+ * @num: int parsed for conv
  * Return: int conversin through putchar_writer
  **/
 int dnum(int num)
 {
-return (putchar_writer (num, 0));
+return (putchar_writer(num, 0));
 }
 
 /**
- * convert_this - major function for int to base10 conversion
+ * convert_this - major function for int to base10 con
  * @zdnum: character specifier between %d and %i
  * Return: address of proper function
  **/
